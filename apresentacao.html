@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Marketplace B2B Construção - Viabilidade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Reveal.js Core -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+
+  <style>
+    /* Custom Theme overrides */
+    :root {
+      --r-main-font: 'Plus Jakarta Sans', sans-serif;
+      --r-heading-font: 'Plus Jakarta Sans', sans-serif;
+      --r-heading-text-transform: none;
+      --r-background-color: #0f172a; /* Slate 900 - Dark mode premium */
+      --r-main-color: #f8fafc; /* Slate 50 */
+      --r-heading-color: #ffffff;
+      --r-link-color: #38bdf8;
+      --r-selection-background-color: #38bdf8;
+    }
+
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    .reveal h1 { font-size: 2.5em; color: #38bdf8; } /* Sky 400 */
+    .reveal h2 { font-size: 1.8em; border-bottom: 2px solid rgba(56, 189, 248, 0.3); padding-bottom: 10px; margin-bottom: 30px;}
+    .reveal h3 { font-size: 1.3em; color: #94a3b8; font-weight: 600;}
+
+    .reveal p, .reveal li {
+      font-size: 0.9em;
+      line-height: 1.6;
+      font-weight: 300;
+      color: #cbd5e1;
+    }
+
+    .reveal ul {
+      margin-top: 20px;
+    }
+
+    .reveal li {
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    .alert {
+      color: #f87171; /* Red 400 */
+      font-weight: 600;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 380px; /* Reduced to fit slides better */
+      margin-top: 20px;
+      background: #ffffff; /* White background for matplotlib charts */
+      border-radius: 8px;
+      padding: 10px;
+      box-sizing: border-box;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .img-container img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain; /* ensures aspect ratio is kept and image fits */
+      margin: 0;
+      border: none;
+      box-shadow: none;
+      background: transparent;
+    }
+    
+    .metric-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .metric-card {
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .metric-value {
+      display: block;
+      font-size: 1.6em;
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 5px;
+    }
+    .metric-label {
+      font-size: 0.7em;
+      color: #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- CAPA -->
+      <section>
+        <h1>Marketplace B2B</h1>
+        <h3>Construção Civil: Eficiência & Transparência</h3>
+        <p style="margin-top: 50px;">
+          Análise Institucional e Viabilidade de Risco<br>
+          <span style="font-size: 0.7em; color: #64748b;">(Seed Stage Model)</span>
+        </p>
+      </section>
+
+      <!-- PROBLEMA -->
+      <section>
+        <h2>O Problema</h2>
+        <div style="text-align: left;">
+          <p>A cadeia de suprimentos da construção é um ambiente de <span class="highlight">alta fricção</span> e extrema ineficiência.</p>
+          <ul>
+            <li>Processos de cotação 100% analógicos (WhatsApp/Telefone).</li>
+            <li>Forte assimetria de informações e preços.</li>
+            <li>Custo elevado na descoberta de novos fornecedores.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SOLUCAO -->
+      <section>
+        <h2>O Modelo (Premissas Reais)</h2>
+        <div style="text-align: left;">
+          <p>O modelo não subestima o risco operacional da tese.</p>
+          <div class="box">
+            <ul>
+              <li><span class="highlight">Monetização:</span> Take rate de 2,5% sobre o GMV.</li>
+              <li><span class="alert">Risco de Bypass:</span> Assumimos desintermediação de 50%. Capturamos apenas metade do potencial de materiais da obra.</li>
+              <li><span class="alert">Fricção de Vendas:</span> Conversão espremida em agressivos 5% (Cold outreach B2B).</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- MERCADO -->
+      <section>
+        <h2>A Escala do Jogo (TAM/SAM/SOM)</h2>
+        <div class="metric-grid" style="grid-template-columns: 1fr 1fr 1fr;">
+          <div class="metric-card">
+            <span class="metric-value">R$ 64 B</span>
+            <span class="metric-label">TAM (Total Brasil)</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">R$ 12,8 B</span>
+            <span class="metric-label">SAM (Mercado Formal)</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">1.264</span>
+            <span class="metric-label">Obras (Meta SOM Ano 5)</span>
+          </div>
+        </div>
+        <p style="margin-top: 40px; font-size: 0.8em; text-align: left;">
+          * Mercado resiliente. Uma fatia milimétrica do setor é suficiente para sustentar a operação.
+        </p>
+      </section>
+
+      <!-- UNIT ECONOMICS -->
+      <section>
+        <h2>Unit Economics vs Custo de Vendas</h2>
+        <div style="text-align: left;">
+          <p>Com conversão de apenas 5%, o <span class="highlight">CAC atinge até R$ 15.000</span>. Contudo, a alta margem do Ticket defende a eficiência do capital.</p>
+        </div>
+        <div class="img-container">
+          <img src="relatorio_latex/figuras/grafico_unit_economics.png" alt="Unit Economics">
+        </div>
+      </section>
+
+      <!-- SOLVER -->
+      <section>
+        <h2>Auditoria Orçamentária (Simplex)</h2>
+        <div style="text-align: left;">
+          <p>A otimização linear atesta que a verba restrita de marketing (40% do OPEX) suporta a meta, sendo desafiada apenas a partir do Ano 4.</p>
+        </div>
+        <div class="img-container">
+          <img src="relatorio_latex/figuras/grafico_solver_mix.png" alt="Solver Marketing">
+        </div>
+      </section>
+
+      <!-- CAIXA -->
+      <section>
+        <h2>O "Vale da Morte" e Fluxo de Caixa</h2>
+        <div style="text-align: left;">
+          <p>O Investimento de <span class="highlight">R$ 705 Mil</span> cobre 6 meses de inoperância comercial e queima do OPEX inicial.</p>
+        </div>
+        <div class="img-container">
+          <img src="relatorio_latex/figuras/grafico_fcl.png" alt="Fluxo de Caixa Livre">
+        </div>
+      </section>
+
+      <!-- INDICADORES -->
+      <section>
+        <h2>Indicadores Chave de Performance</h2>
+        <p>O rigor matemático expõe a atratividade do ativo:</p>
+        <div class="metric-grid" style="grid-template-columns: 1fr 1fr 1fr; margin-top: 15px;">
+          <div class="metric-card">
+            <span class="metric-value">R$ 12,59 M</span>
+            <span class="metric-label">VPL Base</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">319%</span>
+            <span class="metric-label">TIR</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">9,5 meses</span>
+            <span class="metric-label">Payback Simples</span>
+          </div>
+          <div class="metric-card" style="border-color: #f87171;">
+            <span class="metric-value" style="color: #f87171;">45,49%</span>
+            <span class="metric-label">WACC (Custo de Capital)</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">14%</span>
+            <span class="metric-label">Breakeven Conversão</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">> 14x</span>
+            <span class="metric-label">LTV / CAC</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPLICAÇÃO DOS RESULTADOS -->
+      <section>
+        <h2>Os Motores do Resultado</h2>
+        <div style="text-align: left; font-size: 0.85em;">
+          <p>Como o projeto sobrevive a tantas premissas punitivas?</p>
+          <div class="box">
+            <ul>
+              <li><span class="highlight">O Poder do Ticket B2B:</span> Mesmo com fuga transacional de 50%, a intermediação de materiais para uma única obra média (R$ 1,28M) gera um *fee* absoluto de mais de 16 mil reais.</li>
+              <li><span class="highlight">OPEX Enxuto e Escalável:</span> O modelo não exige maquinário logístico. O custo operacional central é a folha de pagamento de tecnologia/vendas, que se dilui brutalmente com o aumento do volume de transações em plataforma (Margem EBITDA atinge 83% no Ano 5).</li>
+              <li><span class="highlight">Defesa Comercial:</span> Mesmo que o CAC do Outbound suba para R$ 15 mil devido à baixa conversão (5%), o LTV contínuo da construtora (projetado em R$ 120 mil ao longo de 5 anos) defende com sobras o investimento inicial em marketing.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- MONTE CARLO -->
+      <section>
+        <h2>Gestão de Risco Estocástico (Monte Carlo)</h2>
+        <div style="text-align: left;">
+          <p>2.000 iterações variando Conversão (2% a 8%) e Custo de Capital (Até 70% a.a).</p>
+        </div>
+        <div class="img-container">
+          <img src="relatorio_latex/figuras/grafico_monte_carlo.png" alt="Monte Carlo">
+        </div>
+      </section>
+
+      <!-- CONCLUSAO -->
+      <section>
+        <h2>Veredito Institucional</h2>
+        <div class="box" style="text-align: left;">
+          <p><span class="highlight">Projeto Aprovado e Blindado.</span></p>
+          <p>Mesmo drenando as premissas com bypass de 50%, gateway de pagamento corroendo receita e gargalo comercial severo (5% Conv.), o modelo gera Caixa Livre persistente e sustentável.</p>
+          <p>A assimetria entre as despesas limitadas do software (*Asset Light*) contra a profundidade financeira colossal do setor construtivo faz do projeto uma tese elegível para Captação Privada.</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Reveal.js Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      transition: 'fade',
+      controls: true,
+      progress: true,
+      center: true,
+    });
+  </script>
+</body>
+</html>
